@@ -7,8 +7,7 @@ providing a clear and structured path for URL analysis endpoints.
 
 :module: phishing_detection_service.urls
 :author: lx
-:license: MIT
-:copyright: (c) 2024 Phishing Detection Project
+
 """
 
 from django.urls import path

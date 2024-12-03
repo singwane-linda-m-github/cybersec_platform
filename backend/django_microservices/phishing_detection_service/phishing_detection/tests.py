@@ -6,8 +6,7 @@ covering various URL analysis scenarios.
 
 :module: phishing_detection.tests
 :author: lx
-:license: MIT
-:copyright: (c) 2024 Phishing Detection Project
+
 
 Future Recommendations:
 

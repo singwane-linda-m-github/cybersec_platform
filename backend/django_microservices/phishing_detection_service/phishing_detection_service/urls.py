@@ -17,16 +17,46 @@ Including another URLconf
 
 
 """
-Root URL Routing
-----------------
-Includes the app-specific routes into the project.
+Root URL Routing Module
+
+Centralized URL configuration for Django project routing.
+Manages top-level URL patterns and application-specific route inclusions.
+
+:module: phishing_detection_service.
+:author: lx
 """
 
+from typing import List
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, URLPattern, URLResolver
+from django.http import HttpRequest
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('phishing/', include('phishing_detection.urls')),  # Correctly includes app routes
-]
 
+def get_urlpatterns() -> List[URLPattern | URLResolver]:
+    """
+    Dynamically generate and configure root URL patterns.
+
+    Provides centralized URL routing with:
+    - Admin interface access
+    - Modular application route inclusion
+    - Potential for future extensibility
+
+    Returns:
+        List[Union[URLPattern, URLResolver]]: Configured URL routing patterns
+    """
+    urlpatterns = [
+        # Django admin interface routes
+        path('admin/', admin.site.urls),
+
+        # Application-specific route inclusions
+        path('phishing/', include('phishing_detection.urls')),
+        
+        # Placeholder for additional application routes
+        # path('api/', include('api.urls')),
+    ]
+
+    return urlpatterns
+
+
+# Assign global urlpatterns for Django's URL dispatcher
+urlpatterns = get_urlpatterns()

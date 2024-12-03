@@ -6,8 +6,6 @@ ensuring data integrity and comprehensive error handling.
 
 :module: phishing_detection_service.serializers
 :author: Development Team
-:license: MIT
-:copyright: (c) 2024 Phishing Detection Project
 
 Key Enhancements:
 

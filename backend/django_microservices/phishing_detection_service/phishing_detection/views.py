@@ -6,8 +6,7 @@ to detect potential phishing threats.
 
 :module: phishing_detection_service.views
 :author: lx
-:license: MIT
-:copyright: (c) 2024 Phishing Detection Project
+
 """
 
 import logging

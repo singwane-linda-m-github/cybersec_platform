@@ -6,8 +6,7 @@ application events, errors, and performance metrics.
 
 :module: phishing_detection_service.settings
 :author: lx
-:license: MIT
-:copyright: (c) 2024 Phishing Detection Project
+
 """
 
 import os

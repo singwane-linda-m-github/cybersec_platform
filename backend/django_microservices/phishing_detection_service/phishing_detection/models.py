@@ -6,8 +6,7 @@ with comprehensive validation and robust error handling.
 
 :module: phishing_detection_service.models
 :author: lx
-:license: MIT
-:copyright: (c) 2024 Phishing Detection Project
+
 """
 
 import re

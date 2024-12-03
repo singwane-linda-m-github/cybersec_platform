@@ -5,9 +5,8 @@ Defines specific exception types for the phishing detection service
 to enable more granular error handling and reporting.
 
 :module: phishing_detection_service.exceptions
-:author: Development Team
-:license: MIT
-:copyright: (c) 2024 Phishing Detection Project
+:author: lx
+
 """
 
 class PhishingDetectionBaseError(Exception):
